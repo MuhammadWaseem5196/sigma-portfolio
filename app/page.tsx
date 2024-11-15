@@ -1,101 +1,129 @@
 import Image from "next/image";
-
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      
+    <div className="m-0  p-[4%]  h-auto w-screen flex justify-center    ">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      {/* main div */}
+
+      <div className="h-auto w-[80%]  bg-[#CFA6A61C;] ">
+         {/* nevbar */}
+         <div className="float-end mt-10 mr-10 text-sm font-thin">
+         <Link href={"#"}> <span>Works</span> </Link>&nbsp;&nbsp;&nbsp;
+         <Link href={"#"}> <span>Blog</span> </Link>&nbsp;&nbsp;&nbsp;
+         <Link href={"#"}> <span>Contact</span> </Link>
+         </div>
+         {/* hero */}
+         <div className="w-[100%] flex justify-center ">
+         <div className="h-auto w-[75%]  mt-28 flex items-center" >
+          <div className="w-[50%]">
+              {/* heading */}
+              <h1 className="text-3xl font-extrabold">Hi, i am <br /> Muhmmad Waseem <br /> Web Developer</h1>
+              <p className="text-sm pt-5 pb-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing  vel architecto magni repellat commodi laudantium maxime eligendi officiis ea voluptatibus, earum nam voluptatum sit?</p>
+             
+              {/* button */} 
+              <button className="w-32 h-8 bg-[#F98585;] text-sm text-whit">Download resume</button>
+              
+              </div>
+              <div className="ml-28 "> 
+                {/* images */}
+              <Image src={'/images/123.jpeg'} alt="profile" height={200} width={200} className="rounded-full"></Image>
+              
+              </div>
+         </div>
+         </div>
+              {/* blog */}   
+            <div className="w-[100%] h-80 bg-[#F4E2E2;] mt-20 pl-40 pr-40 pt-5 ">
+              <div className="flex justify-between text-sm ">
+                     <h3>Recent Post</h3><h3 className="text-red-400">View all </h3>
+              </div>
+               {/* content 1 */}   
+               <div className="flex justify-between pt-3">
+               <div className="bg-white w-[48%] h-60 p-6 font-bold">
+                <h1>Making a design system from scratch</h1>
+                <h3 className="text-[12px] font-thin mt-4 mb-4">12 Feb 2024 &nbsp;&nbsp;  |&nbsp;&nbsp; Desighn, Pattern</h3>
+               <p className="text-[10px] font-thin text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius quod eligendi incidunt repudiandae, ullam quam quasi modi aspernatur autem voluptatum enim dolores ut voluptatibus harum, cum, ipsam non et.</p>
+               </div>
+               {/* content 2 */} 
+               <div className="bg-white w-[48%] h-60 p-6 font-bold">
+               <h1>Making a design system from scratch</h1>
+               <h3 className="text-[12px] font-thin mt-4 mb-4">12 Feb 2024 &nbsp;&nbsp;  |&nbsp;&nbsp; Desighn, Pattern</h3>
+               <p className="text-[10px] font-thin text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius quod eligendi incidunt repudiandae, ullam quam quasi modi aspernatur autem voluptatum enim dolores ut voluptatibus harum, cum, ipsam non et.</p>
+              
+               </div>
+               </div>
+                 
+            </div>
+             {/* content 2 strt*/}
+             <div className="w-[100%] pl-40 pr-40 mt-6">
+               <p className="font-bold text-[12px]">Featured Works</p>
+               <div className="flex  mt-4 mb-10">
+                {/* image*/}
+                <div>
+                  <Image src={'/images/Rectangle 30.png'} height={350} width={350} alt="picture"></Image>
+                </div>
+                {/* contetn*/}
+                <div className="pl-4">
+                  <h2 className="font-bold">Designing Dashboards</h2>
+                  <span className="  bg-[#F98585;] text-[9px] p-1 pl-2 pr-2 rounded-3xl text-white">2020</span>
+                  <span className=" text-[10px] ml-3 font-extralight">Dashboard</span>
+                  <p className="text-[9px] text-justify w-[80%] pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem dolores maxime quo nemo minima laboriosam quisquam, cumque explicabo delectus totam veniam. Animi, similique explicabo. Veritatis commodi non laudantium ducimus!</p>
+                </div>
+
+               </div>
+
+
+               <div className="flex  mt-4 mb-10">
+                {/* image*/}
+                <div>
+                  <Image src={'/images/Rectangle 32.png'} height={350} width={350} alt="picture"></Image>
+                </div>
+                {/* contetn*/}
+                <div className="pl-4">
+                  <h2 className="font-bold">Designing Dashboards</h2>
+                  <span className="  bg-[#F98585;] text-[9px] p-1 pl-2 pr-2 rounded-3xl text-white">2020</span>
+                  <span className=" text-[10px] ml-3 font-extralight">Dashboard</span>
+                  <p className="text-[9px] text-justify w-[80%] pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem dolores maxime quo nemo minima laboriosam quisquam, cumque explicabo delectus totam veniam. Animi, similique explicabo. Veritatis commodi non laudantium ducimus!</p>
+                </div>
+
+               </div>
+
+
+               <div className="flex  mt-4 pb-20">
+                {/* image*/}
+                <div>
+                  <Image src={'/images/Rectangle 34.png'} height={350} width={350} alt="picture"></Image>
+                </div>
+                {/* contetn*/}
+                <div className="pl-4">
+                  <h2 className="font-bold">Designing Dashboards</h2>
+                  <span className="  bg-[#F98585;] text-[9px] p-1 pl-2 pr-2 rounded-3xl text-white">2020</span>
+                  <span className=" text-[10px] ml-3 font-extralight">Dashboard</span>
+                  <p className="text-[9px] text-justify w-[80%] pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem dolores maxime quo nemo minima laboriosam quisquam, cumque explicabo delectus totam veniam. Animi, similique explicabo. Veritatis commodi non laudantium ducimus!</p>
+                </div>
+
+               </div>
+             </div>
+             {/* content 2 strt*/}
+              {/* footer start*/}
+              <div className="w-[100%] h-auto pt-8 pb-8  bg-[#faf9f9]">
+              <div className="flex flex-row gap-10 text-2xl justify-center">
+                <span><FaFacebookSquare /></span><span><FaInstagram /></span> <span><FaTwitter /></span> <span><FaLinkedin /></span>
+                
+              </div>
+              <h5 className="text-center font-bold mt-4">Copyright @2020 All rights reserved</h5>
+              </div>
+
+              {/* footer end*/}
+
+      </div>
+
     </div>
+
   );
 }
